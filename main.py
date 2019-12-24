@@ -10,41 +10,51 @@ print(df)
 
 x = float(input('c'))
 y = float(input('s'))
+
+
 def cena():
     pr = df['Cena'][x]
-    return pr
+    prs = pr/(size()/y)
+    return prs
 
 def size():
     s = df['Size/g'][x]
+    
     return s
 
 
 def fat():
     f = df['Fat/100g'][x]
-    return f
+    fa = f*(y/100)
+    return fa
 
 def carbs():
     c = df['Carbs/100g'][x]
-    return c
+    ca = c*(y/100)
+    return ca
 
 def protein():
     p = df['Protein/100g'][x]
-    return p
-
-def calc():
-    prs = cena()/(size()/y)
-    print('Prices:',prs)
-    fa = fat()*(y/100)
-    print('Fat: ',fa)
-    ca = carbs()*(y/100)
-    print('Carbs: ',ca)
-    pro = protein()*(y/100)
-    print('Proteins: ',pro)
-    kcal = (pro * 4)+(ca*4)+(fa*9)
-    print('Kcal: ',kcal)
-    
-    
-
-calc()
+    pro = p*(y/100)
+    return pro
+def calories():
+    kcal = (protein() * 4)+(carbs()*4)+(fat()*9)
+    return kcal
 
 
+
+def serialize():
+        return {
+            'prices' : cena(),
+            'fats' : fat(),
+            'carbs' : carbs(),
+            'proteins' : protein(),
+            'calories' : calories(),
+            
+
+        }
+a = serialize()
+with open('record.json', 'w') as json_file:
+    json.dump(a, json_file, sort_keys=True, indent=4)
+
+print(a)
