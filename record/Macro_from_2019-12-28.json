@@ -1,0 +1,60 @@
+{
+    "activities": [
+        {
+            "Macros": [
+                {
+                    "added at": "2019-12-28 18:30:43",
+                    "calories": 117.5,
+                    "carbs": 1.375,
+                    "fats": 3.0,
+                    "prices": 3.995,
+                    "proteins": 21.25,
+                    "size": 500.0
+                }
+            ],
+            "Product": "Szynka Morliny"
+        },
+        {
+            "Macros": [
+                {
+                    "added at": "2019-12-28 21:59:49",
+                    "calories": 301.62,
+                    "carbs": 7.700000000000001,
+                    "fats": 17.380000000000003,
+                    "prices": 4.98,
+                    "proteins": 28.6,
+                    "size": 500.0
+                }
+            ],
+            "Product": "sardynki Lidl 110g"
+        },
+        {
+            "Macros": [
+                {
+                    "added at": "2019-12-28 23:12:31",
+                    "calories": 122.0,
+                    "carbs": 16.2,
+                    "fats": 3.6,
+                    "prices": 0.998,
+                    "proteins": 6.2,
+                    "size": 500.0
+                }
+            ],
+            "Product": "Napoj Sojowy o smaku czekoladowym"
+        },
+        {
+            "Macros": [
+                {
+                    "added at": "2019-12-28 23:13:45",
+                    "calories": 305.0,
+                    "carbs": 40.5,
+                    "fats": 9.0,
+                    "prices": 2.495,
+                    "proteins": 15.5,
+                    "size": 500.0
+                }
+            ],
+            "Product": "Napoj Sojowy o smaku czekoladowym"
+        }
+    ]
+}
